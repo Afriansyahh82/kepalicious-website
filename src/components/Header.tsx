@@ -4,7 +4,6 @@ import { useCart } from '@/context/CartContext';
 import { ShoppingCart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import CartDrawer from './CartDrawer';
-import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const { totalItems, setIsCartOpen } = useCart();
@@ -28,16 +27,16 @@ const Header: React.FC = () => {
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Link to="/" className="text-2xl font-bold text-kepal-dark hover-scale">
+          <a href="#" className="text-2xl font-bold text-kepal-dark hover-scale">
             <span className="text-kepal-yellow">Kepa</span>licious
-          </Link>
+          </a>
         </div>
         
         <nav className="hidden md:flex space-x-6">
-          <Link to="/" className="font-medium hover:text-kepal-yellow transition-colors">Beranda</Link>
-          <Link to="/#menu" className="font-medium hover:text-kepal-yellow transition-colors">Menu</Link>
-          <Link to="/about" className="font-medium hover:text-kepal-yellow transition-colors">Tentang Kami</Link>
-          <Link to="/contact" className="font-medium hover:text-kepal-yellow transition-colors">Kontak</Link>
+          <a href="#" className="font-medium hover:text-kepal-yellow transition-colors">Beranda</a>
+          <a href="#menu" className="font-medium hover:text-kepal-yellow transition-colors">Menu</a>
+          <a href="#about" className="font-medium hover:text-kepal-yellow transition-colors">Tentang Kami</a>
+          <a href="#contact" className="font-medium hover:text-kepal-yellow transition-colors">Kontak</a>
         </nav>
         
         <div className="flex items-center">
