@@ -1,9 +1,6 @@
-
 import React from 'react';
-
 const AboutSection: React.FC = () => {
-  return (
-    <section className="py-16 bg-white">
+  return <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Tentang Kepalicious</h2>
@@ -14,15 +11,10 @@ const AboutSection: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <img 
-              src="/images/about-image.jpg" 
-              alt="Kisah Kepalicious" 
-              className="rounded-xl shadow-lg object-cover w-full h-[400px]"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = 'https://images.unsplash.com/photo-1581299894007-aaa50297cf16?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
-              }}
-            />
+            <img src="/images/about-image.jpg" alt="Kisah Kepalicious" className="rounded-xl shadow-lg object-cover w-full h-[400px]" onError={e => {
+            const target = e.target as HTMLImageElement;
+            target.src = 'https://images.unsplash.com/photo-1581299894007-aaa50297cf16?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
+          }} />
             <div className="absolute -bottom-5 -right-5 bg-kepal-yellow rounded-xl p-4 shadow-lg lg:w-48">
               <p className="font-semibold text-kepal-dark">Berdiri sejak 2022</p>
               <p className="text-sm text-kepal-dark mt-1">Melayani dengan sepenuh hati</p>
@@ -91,8 +83,6 @@ const AboutSection: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
