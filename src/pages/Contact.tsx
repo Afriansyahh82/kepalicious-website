@@ -6,7 +6,7 @@ import { CartProvider } from '@/context/CartContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { WhatsApp, Mail, MapPin, Clock } from 'lucide-react';
+import { Mail, MapPin, Clock } from 'lucide-react';
 
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -161,7 +161,21 @@ const Contact = () => {
                   </div>
                   
                   <div className="flex items-start">
-                    <WhatsApp className="h-6 w-6 text-kepal-yellow mr-3 mt-0.5" />
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      viewBox="0 0 24 24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      strokeWidth="2" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      className="h-6 w-6 text-kepal-yellow mr-3 mt-0.5"
+                    >
+                      <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                      <path d="M9 10a.5.5 0 0 1 1 0v2a.5.5 0 0 1-1 0v-2Z" />
+                      <path d="M14 10a.5.5 0 0 1 1 0v2a.5.5 0 0 1-1 0v-2Z" />
+                      <path d="M12 16a4 4 0 0 0 4-4v-2a4 4 0 0 0-8 0v2a4 4 0 0 0 4 4Z" />
+                    </svg>
                     <div>
                       <h3 className="font-medium">WhatsApp</h3>
                       <p className="text-gray-600">+62 812-3456-7890</p>
