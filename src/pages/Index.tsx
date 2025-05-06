@@ -7,7 +7,6 @@ import Features from '@/components/Features';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
 import { CartProvider } from '@/context/CartContext';
-import { motion } from 'framer-motion';
 
 const Index = () => {
   useEffect(() => {

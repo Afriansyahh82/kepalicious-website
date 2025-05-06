@@ -2,7 +2,7 @@
 import React from 'react';
 import { useCart } from '@/context/CartContext';
 import { Button } from '@/components/ui/button';
-import { Trash2, Plus, Minus, X, WhatsApp } from 'lucide-react';
+import { Trash2, Plus, Minus, X } from 'lucide-react';
 import { formatRupiah } from '@/lib/utils';
 
 const CartDrawer: React.FC = () => {
@@ -156,7 +156,12 @@ const CartDrawer: React.FC = () => {
                 className="w-full bg-kepal-yellow hover:bg-kepal-orange text-kepal-dark flex items-center gap-2"
                 onClick={handleCheckout}
               >
-                <WhatsApp className="h-5 w-5" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+                  <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                  <path d="M9 10a.5.5 0 0 1 1 0v2a.5.5 0 0 1-1 0v-2Z" />
+                  <path d="M14 10a.5.5 0 0 1 1 0v2a.5.5 0 0 1-1 0v-2Z" />
+                  <path d="M12 16a4 4 0 0 0 4-4v-2a4 4 0 0 0-8 0v2a4 4 0 0 0 4 4Z" />
+                </svg>
                 Checkout via WhatsApp
               </Button>
               

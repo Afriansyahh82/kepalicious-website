@@ -1,9 +1,9 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -47,6 +47,7 @@
     font-family: 'Poppins', sans-serif;
   }
 
+  /* ... keep existing code (cart-badge, keyframes, animations) */
   .cart-badge {
     @apply absolute -top-2 -right-2 bg-kepal-red text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center;
     animation: pulse 2s infinite;
